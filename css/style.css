@@ -1,0 +1,319 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.bg-menu {background-color: rgb(116, 38, 38);}
+
+
+.navbar-nav {margin: auto;}
+
+.nav-link {margin: 0 40px;color: white !important;
+font-size: 1.2em !important;
+text-transform: uppercase;
+}
+
+.logonav {width: 2em;}
+
+
+footer {
+    background-color: rgb(255, 222, 159);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+footer h3 {font-size: 1.2em;}
+
+footer a img {
+    margin: 10px;
+}
+
+/* index main*/
+.hero {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.hero h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    padding: 50px;
+    letter-spacing: 2px;
+}
+
+.imgcarousel {width: 70%}
+
+.hero p {
+    padding: 0 50px 50px 50px;
+    text-align: justify;
+}
+
+.hero .backimgtour {
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    border-radius: 55px;
+    background-image: url(../img/rollinggira.npg.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+.hero section .backimgtour a {
+    font-size: 20px;
+    color: white;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.hero section .backimgtour a:hover {font-size: 35px;}
+
+.hero2 section {max-height: 350px;}
+
+
+
+.hero2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.hero2 img {
+    width: 20em;
+    height: 100%;
+
+}
+
+/*pag contacto*/
+form {
+    color: white;
+    background-color: black;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    border: 2px solid red;
+    padding: 2px;
+}
+
+.contactanos {
+    color: rgb(213, 12, 12);
+    background-color: black;
+    font-size: 20px;
+    padding: 25px;
+    margin-bottom: 0;
+}
+
+.formulario {
+    padding: 10px 25px;
+}
+
+/*pag discos*/
+
+.discografia .discos {
+    font-size: 1.2em !important;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    margin-top: 2em;
+}
+
+.discografia .discos img {
+    width: 15em;
+    height:15em;
+    
+}
+
+.discografia .discos ol {
+    margin-left: 1em;
+}
+
+.discografia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: black;
+    padding-bottom: 2.5em;
+    padding-left:3em
+}
+
+
+
+/*pag historia*/
+.historia {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+
+.historia p {
+    font-size: 20px;
+text-align:justify;
+padding: 0 2em 0 2em;
+}
+
+.historia h2 {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 40px 0 20px 0;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.historia .imagenhistoria1 {
+    width: 80%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.historia .imghistoria {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.historia .imghistoria img {
+    width: 40%;
+    height: auto;
+    margin-top: 50px;
+    border: 3px solid white;
+}
+
+
+@media screen and (max-width:1490px) {
+    .hero2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero2 img {
+        margin-right: 20px;
+    }
+
+    .hero2 .backimgtour a {
+        padding: 0 20px;
+    }
+
+    iframe {
+        margin-top: 0px;
+    }
+
+    .backimgtour {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media screen and (max-width:1400px) {
+    .discografia {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 3em;
+    }
+    .discos {display: flex;justify-content: center;}
+}
+
+@media screen and (max-width:1384px)
+{ 
+    iframe {
+        margin-top: 50px;
+    }}
+
+
+
+@media screen and (max-width:1000px) {
+    
+    .hero2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero2 img {
+        width: 80%;
+        margin: 0;
+    }
+
+    .backimgtour {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .hero2 section {
+        width: 50%;
+        height: 20em;
+    }
+
+    iframe {
+        width: 80%;
+    }
+
+    .hero2 section {
+        width: 80%;
+    }
+
+    .discografia {display: grid;grid-template-columns: 1fr 1fr;
+    padding: 0;
+    padding-bottom: 2em;}
+    
+    
+
+
+    }
+
+    @media screen and (max-width :900px) {
+        .discografia {display: grid;grid-template-columns: 1fr;}
+    }
+    
+
+
+@media (max-width: 480px) {
+    .discografia {
+        grid-template-columns: 1fr;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    .discografia .discos {
+        flex-direction: column; 
+        align-items: center;
+        
+    }
+
+    .discografia .discos img {
+        width: 15em;
+        height: 15em;
+        margin-bottom: 1em;
+    }
+
+    .discografia .discos ol {
+        margin-right:10em ; 
+        text-align: center; 
+    }
+}
+
+
