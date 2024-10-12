@@ -1,6 +1,6 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box
 }
 
@@ -54,7 +54,7 @@ footer a img {
 
 
 .hero h1 {
-    font-size: 1em;
+    font-size: 1.5em;
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 100;
@@ -64,7 +64,7 @@ footer a img {
 
 .imgcarousel {
     width: 70%;
-    border: 4px solid rgb(116, 38, 38);
+    border: 4px solid rgb(255, 255, 255);
 }
 
 .hero p {
@@ -184,6 +184,9 @@ textarea {
     overflow-x:hidden;
 }
 
+.discografia .discos ol li {
+    text-align: start;
+}
 
 
 
@@ -192,7 +195,7 @@ textarea {
     color: white;
     background-color: black;
     text-align: center;
-    padding-bottom: 15px;
+    padding: 1.8em 0 1.8em 0;
 }
 
 
@@ -200,33 +203,42 @@ textarea {
 .historia p {
     font-size: 20px;
     text-align: justify;
-    padding: 0 2em 0 2em;
+    margin: 0;
+    padding: 0 1.2em ;
+    
 }
 
 .historia h2 {
-    font-size: 40px;
+    font-size: 2.2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 40px 0 20px 0;
     text-transform: uppercase;
     font-weight: 100;
+    margin: 0;
+    
 }
+
+.historia .primerosexitos {padding-bottom:0.7em;}
+
+.historia .enlacimadelmundo {padding: 0.7em 0;}
 
 .historia .imagenhistoria1 {
     width: 80%;
     height: auto;
-    padding-bottom: 20px;
+    padding: 1.5em 0 1.5em 0;
+
+    
 }
 
 .historia .imghistoria {
     display: flex;
     justify-content: space-evenly;
+    padding: 1.5em 0 1.5em 0;
 }
 
 
 .historia .imghistoria img {
     width: 40%;
     height: auto;
-    margin-top: 50px;
     border: 3px solid white;
 }
 
@@ -358,10 +370,15 @@ textarea {
         margin-right: 4em;
         
     }
-    iframe {height: 6em;}
+    iframe {height: 8em;}
+
+    .historia .imghistoria { display: flex;
+    flex-direction: column;
+align-items: center;
+gap:2em;
+}
+
+.historia .imghistoria  img {width: 18em;}
 }
 
 
-.discografia .discos ol li {
-    text-align: start;
-}
