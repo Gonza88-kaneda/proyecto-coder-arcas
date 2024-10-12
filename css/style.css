@@ -54,7 +54,7 @@ footer a img {
 
 
 .hero h1 {
-    font-size: 1.8em;
+    font-size: 1em;
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 100;
@@ -266,16 +266,10 @@ textarea {
 
 }
 
-@media screen and (max-width:1384px) {
+@media screen and (max-width:1385px) {
     iframe {
         margin-top: 50px;
     }
-}
-
-
-
-@media screen and (max-width:1000px) {
-
     .hero2 {
         display: flex;
         flex-direction: column;
@@ -292,18 +286,22 @@ textarea {
         width: 100%;
     }
 
+    
+
     .hero2 section {
-        width: 50%;
+        width: 65%;
         height: 20em;
     }
 
-    iframe {
-        width: 80%;
-    }
+    
 
-    .hero2 section {
-        width: 80%;
-    }
+
+}
+
+
+
+@media screen and (max-width:1000px) {
+
 
     .discografia {
         display: grid;
@@ -324,6 +322,11 @@ textarea {
         align-items: center;
     }
     .discografia .discos {width: 31em;}
+}
+
+@media screen and (max-width:600px) {
+    iframe {width: 80%}
+    
 }
 
 
@@ -355,7 +358,9 @@ textarea {
         margin-right: 4em;
         
     }
+    iframe {height: 6em;}
 }
+
 
 .discografia .discos ol li {
     text-align: start;
