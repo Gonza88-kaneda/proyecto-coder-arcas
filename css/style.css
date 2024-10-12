@@ -8,17 +8,25 @@ a {
     text-decoration: none !important;
 }
 
-.bg-menu {background-color: rgb(116, 38, 38);}
-
-
-.navbar-nav {margin: auto;}
-
-.nav-link {margin: 0 40px;color: white !important;
-font-size: 1.2em !important;
-text-transform: uppercase;
+.bg-menu {
+    background-color: rgb(116, 38, 38);
 }
 
-.logonav {width: 2em;}
+
+.navbar-nav {
+    margin: auto;
+}
+
+.nav-link {
+    margin: 0 40px;
+    color: white !important;
+    font-size: 1.2em !important;
+    text-transform: uppercase;
+}
+
+.logonav {
+    width: 2em;
+}
 
 
 footer {
@@ -28,7 +36,9 @@ footer {
     text-align: center;
 }
 
-footer h3 {font-size: 1.2em;}
+footer h3 {
+    font-size: 1.2em;
+}
 
 footer a img {
     margin: 10px;
@@ -44,7 +54,7 @@ footer a img {
 
 
 .hero h1 {
-    font-size: 50px;
+    font-size: 1.8em;
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 100;
@@ -52,7 +62,10 @@ footer a img {
     letter-spacing: 2px;
 }
 
-.imgcarousel {width: 70%}
+.imgcarousel {
+    width: 70%;
+    border: 4px solid rgb(116, 38, 38);
+}
 
 .hero p {
     padding: 0 50px 50px 50px;
@@ -81,17 +94,25 @@ footer a img {
     padding-bottom: 10px;
     text-transform: uppercase;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-}
-.hero section .backimgtour a:hover {font-size: 35px;}
 
-.hero2 section {max-height: 350px;}
+}
+
+.hero section .backimgtour a:hover {
+    font-size: 35px;
+}
+
+.hero2 section {
+    max-height: 350px;
+}
+
+
 
 
 
 .hero2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -100,7 +121,11 @@ footer a img {
 .hero2 img {
     width: 20em;
     height: 100%;
+    border: solid 4px white;
+}
 
+.hero2 iframe {
+    border: solid 4px white;
 }
 
 /*pag contacto*/
@@ -131,22 +156,23 @@ textarea {
 
 /*pag discos*/
 
+
 .discografia .discos {
-    font-size: 1.2em !important;
+    font-size: 1em !important;
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     margin-top: 2em;
 }
 
 .discografia .discos img {
     width: 15em;
-    height:15em;
-    
+    height: 15em;
+
 }
 
 .discografia .discos ol {
-    margin-left: 1em;
+    margin-left:1em;
 }
 
 .discografia {
@@ -154,8 +180,10 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     background-color: black;
     padding-bottom: 2.5em;
-    padding-left:3em
+    padding-left: 3em;
+    overflow-x:hidden;
 }
+
 
 
 
@@ -171,8 +199,8 @@ textarea {
 
 .historia p {
     font-size: 20px;
-text-align:justify;
-padding: 0 2em 0 2em;
+    text-align: justify;
+    padding: 0 2em 0 2em;
 }
 
 .historia h2 {
@@ -232,21 +260,22 @@ padding: 0 2em 0 2em;
 @media screen and (max-width:1400px) {
     .discografia {
         grid-template-columns: repeat(2, 1fr);
-        padding-left: 3em;
+
+
     }
-    .discos {display: flex;justify-content: center;}
+
 }
 
-@media screen and (max-width:1384px)
-{ 
+@media screen and (max-width:1384px) {
     iframe {
         margin-top: 50px;
-    }}
+    }
+}
 
 
 
 @media screen and (max-width:1000px) {
-    
+
     .hero2 {
         display: flex;
         flex-direction: column;
@@ -276,19 +305,28 @@ padding: 0 2em 0 2em;
         width: 80%;
     }
 
-    .discografia {display: grid;grid-template-columns: 1fr 1fr;
-    padding: 0;
-    padding-bottom: 2em;}
-    
-    
-
-
+    .discografia {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 2em 2m 2m;
     }
 
-    @media screen and (max-width :900px) {
-        .discografia {display: grid;grid-template-columns: 1fr;}
+
+
+
+}
+
+@media screen and (max-width :980px) {
+    .discografia {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
-    
+    .discografia .discos {width: 31em;}
+}
+
+
 
 
 @media (max-width: 480px) {
@@ -297,11 +335,11 @@ padding: 0 2em 0 2em;
         padding-left: 1em;
         padding-right: 1em;
     }
-    
+
     .discografia .discos {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
-        
+
     }
 
     .discografia .discos img {
@@ -311,9 +349,14 @@ padding: 0 2em 0 2em;
     }
 
     .discografia .discos ol {
-        margin-right:10em ; 
-        text-align: center; 
+        text-align: center;
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 4em;
+        
     }
 }
 
-
+.discografia .discos ol li {
+    text-align: start;
+}
