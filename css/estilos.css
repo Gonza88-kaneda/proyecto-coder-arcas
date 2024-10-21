@@ -1,0 +1,168 @@
+/* variables*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+.navbar-nav {
+  margin: auto; }
+
+.nav-link {
+  margin: 0 40px;
+  color: white !important;
+  font-size: 1.2em !important;
+  text-transform: uppercase; }
+
+.logonav {
+  width: 2em; }
+
+.bg-menu {
+  background-color: #742626; }
+
+/* index*/
+.hero {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  text-align: center; }
+  .hero h1 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    padding: 50px;
+    letter-spacing: 2px; }
+  .hero p {
+    padding: 0 50px 50px 50px;
+    text-align: justify; }
+
+.imgcarousel {
+  width: 70%;
+  border: 4px solid white; }
+
+.hero2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .hero2 img {
+    width: 20em;
+    height: 100%;
+    border: solid 4px white; }
+  .hero2 section {
+    max-height: 350px; }
+    .hero2 section .backimgtour {
+      width: 100%;
+      height: 100%;
+      border: 5px solid white;
+      border-radius: 55px;
+      background-image: url(../img/rollinggira.npg.jpg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: end; }
+      .hero2 section .backimgtour a {
+        font-size: 20px;
+        color: white;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+        .hero2 section .backimgtour a:hover {
+          font-size: 35px; }
+  .hero2 iframe {
+    border: solid 4px white; }
+
+/* integrantes*/
+.mainintegrantes {
+  background-color: black; }
+  .mainintegrantes .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; }
+    .mainintegrantes .container .integrante {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      padding: 15px; }
+      .mainintegrantes .container .integrante img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 20px;
+        object-fit: cover; }
+      .mainintegrantes .container .integrante div h2 {
+        margin: 0 0 10px;
+        color: #742626; }
+      .mainintegrantes .container .integrante div p {
+        margin: 0;
+        color: black;
+        font-size: 16px;
+        font-weight: 500; }
+
+/* historia*/
+.historia {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 1.8em 0 1.8em 0; }
+  .historia .imagenhistoria1 {
+    width: 80%;
+    height: auto;
+    padding: 1.5em 0 1.5em 0; }
+  .historia p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 0;
+    padding: 0 1.2em; }
+  .historia .imghistoria {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5em 0 1.5em 0; }
+    .historia .imghistoria img {
+      width: 40%;
+      height: auto;
+      border: 3px solid white; }
+  .historia .primerosexitos {
+    padding-bottom: 0.7em; }
+  .historia .enlacimadelmundo {
+    padding: 0.7em 0; }
+
+/* discografia*/
+main .discografia {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: black;
+  padding-bottom: 2.5em;
+  padding-left: 3em;
+  overflow-x: hidden; }
+  main .discografia .discos {
+    font-size: 1em !important;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    margin-top: 2em; }
+    main .discografia .discos img {
+      width: 15em;
+      height: 15em; }
+    main .discografia .discos ol {
+      margin-left: 1em; }
+      main .discografia .discos ol li {
+        text-align: start; }
+
+footer {
+  background-color: #ffde9f;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: center; }
+  footer h3 {
+    font-size: 1.2em; }
+  footer a img {
+    margin: 10px; }
