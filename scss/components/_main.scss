@@ -3,7 +3,7 @@
     color: white;
     font-size: 25px;
     text-align: center;
-    h1{ font-size: 1.5em;
+    h1{ font-size: nth($font-size,3);
         text-transform: uppercase;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-weight: 100;
@@ -118,7 +118,7 @@
                 }
                 p{ margin: 0;
                     color:$color-principal;
-                    font-size: 16px;
+                    font-size: 1em;
                     font-weight: 500;
                 }
             }
@@ -131,18 +131,14 @@
     text-align: center;
     padding: 1.8em 0 1.8em 0;
 
-    h2 {font-size: 2.2em;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-transform: uppercase;
-        font-weight: 100;
-        margin: 0;}
+    h2 {@extend %tituloshistoria }
         
     .imagenhistoria1 {width: 80%;
         height: auto;
         padding: 1.5em 0 1.5em 0;
     }
 
-    p{  font-size: 20px;
+    p{  font-size: nth($font-size,2);
         text-align: justify;
         margin: 0;
         padding: 0 1.2em ;
@@ -196,7 +192,7 @@ main {
         }   
 
 
-        .discos { font-size: 1em !important;
+        .discos { font-size:nth($font-size,1);
             color:$color-secundario;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             display: flex;

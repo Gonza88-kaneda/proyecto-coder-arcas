@@ -1,4 +1,13 @@
 /* variables*/
+/* listas */
+/*extend*/
+.historia h2 {
+  font-size: 2.2em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0; }
+
 * {
   margin: 0;
   padding: 0;
@@ -159,7 +168,7 @@ a {
       .mainintegrantes .container .integrante div p {
         margin: 0;
         color: black;
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 500; }
 
 /* historia*/
@@ -168,18 +177,12 @@ a {
   background-color: black;
   text-align: center;
   padding: 1.8em 0 1.8em 0; }
-  .historia h2 {
-    font-size: 2.2em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-transform: uppercase;
-    font-weight: 100;
-    margin: 0; }
   .historia .imagenhistoria1 {
     width: 80%;
     height: auto;
     padding: 1.5em 0 1.5em 0; }
   .historia p {
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: justify;
     margin: 0;
     padding: 0 1.2em; }
@@ -236,7 +239,7 @@ main .discografia {
       padding-left: 1em;
       padding-right: 1em; } }
   main .discografia .discos {
-    font-size: 1em !important;
+    font-size: 1em;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
