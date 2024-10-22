@@ -1,67 +1,91 @@
 /* index*/
-.hero {
-    background-color:$color-principal;
-    color:$color-secundario;
+.hero {background-color: black;
+    color: white;
     font-size: 25px;
     text-align: center;
-    h1 {
-        font-size: 1.5em;
+    h1{ font-size: 1.5em;
         text-transform: uppercase;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-weight: 100;
         padding: 50px;
         letter-spacing: 2px;
-        }
-
-    p {
-        padding: 0 50px 50px 50px;
-    text-align: justify;
+    }
+    p{padding: 0 50px 50px 50px;
+        text-align: justify;
+        @include medida5 {text-align: center;}
 
     }
-}
 
-.imgcarousel {width: 70%;
-    border: 4px solid $color-secundario;
-}
-
-
-.hero2 {display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    img { width: 20em;
-        height: 100%;
-        border: solid 4px $color-secundario;
-        }
-
-    section{max-height: 350px;
-        .backimgtour {width: 100%;
-            height: 100%;
-            border: 5px solid $color-secundario;
-            border-radius: 55px;
-            background-image: url(../img/rollinggira.npg.jpg);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
+    .hero2 { display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @include medida1 {
             display: flex;
-            justify-content: center;
-            align-items: end;
-            a {font-size: 20px;
-                color: $color-secundario;
-                padding-bottom: 10px;
-                text-transform: uppercase;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                &:hover { font-size: 35px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        }
+        @include medida3 {
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        img { width: 20em;
+            height: 100%;
+            border: solid 4px white;
+            @include medida1 { margin-right: 20px;
+
+            }
+            @include medida3 {width: 80%;
+                margin: 0;}
+
+        }
+        section {max-height: 350px;
+            @include medida3 { width: 65%;
+                height: 20em;}
+            .backimgtour {width: 100%;
+                height: 100%;
+                border: 5px solid white;
+                border-radius: 55px;
+                background-image: url(../img/rollinggira.npg.jpg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                @include medida1 { width: 100%;
+                    height: 100%;}
+                @include medida3 {
+                    margin-top: 30px;
+                    width: 100%;
+                }    
+                a { font-size: 20px;
+                    color: white;
+                    padding-bottom: 10px;
+                    text-transform: uppercase;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    &:hover {font-size: 35px;};
+                    @include medida1 { padding: 0 20px;}
+                    
 
                 }
             }
         }
-    }
-    iframe {border: solid 4px $color-secundario;
+        iframe { border: solid 4px white;
+            @include medida1 { margin-top: 0px;}
+            @include medida3 {margin-top: 50px;}
+            @include medida7 {width: 80%}
+            @include medida8 {height: 8em;}
 
+        }
     }
 }
+.imgcarousel {width: 70%;
+    border: 4px solid rgb(255, 255, 255);}
+
 /* integrantes*/
 .mainintegrantes {background-color:$color-principal;
     .container{max-width: 1200px;
@@ -73,6 +97,13 @@
             border-radius: 10px;
             margin-bottom: 20px;
             padding: 15px;
+            @include medida6{display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: white;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                padding: 15px;}
             img {width: 150px;
                 height: 150px;
                 border-radius: 50%;
@@ -99,6 +130,13 @@
     background-color: black;
     text-align: center;
     padding: 1.8em 0 1.8em 0;
+
+    h2 {font-size: 2.2em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: uppercase;
+        font-weight: 100;
+        margin: 0;}
+        
     .imagenhistoria1 {width: 80%;
         height: auto;
         padding: 1.5em 0 1.5em 0;
@@ -108,13 +146,20 @@
         text-align: justify;
         margin: 0;
         padding: 0 1.2em ;
+        @include medida8 {text-align: center;}
+
     }
     .imghistoria {display: flex;
         justify-content: space-evenly;
         padding: 1.5em 0 1.5em 0;
+        @include medida8 {display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:2em;}
         img {width: 40%;
             height: auto;
             border: 3px solid white;
+            @include medida8 {width: 18em;}
 
         }
     }
@@ -134,16 +179,45 @@ main {
         padding-bottom: 2.5em;
         padding-left: 3em;
         overflow-x:hidden;
+        @include medida2{grid-template-columns: repeat(2, 1fr)}
+        @include medida4 {display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 0 2em 2m 2m;}
+        @include medida5{
+            display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        } 
+        @include medida8 {
+            grid-template-columns: 1fr;
+            padding-left: 1em;
+            padding-right: 1em;
+        }   
+
+
         .discos { font-size: 1em !important;
             color:$color-secundario;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             display: flex;
             margin-top: 2em;
+            @include medida5 {width: 31em;}
+            @include medida8 {flex-direction: column;
+                align-items: center;}
             img{ width: 15em;
                 height: 15em;
+                @include medida8 {
+                    width: 15em;
+                    height: 15em;
+                    margin-bottom: 1em;
+                }
             }
 
             ol { margin-left:1em;
+                @include medida8{ text-align: center;
+                    margin-left: 0;
+                    padding-left: 0;
+                    margin-right: 4em;}
                 li{ text-align: start;
 
                 }

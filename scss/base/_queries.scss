@@ -1,0 +1,54 @@
+@mixin medida1 {
+    @media screen and (max-width:1490px) {
+        @content;}
+}
+@mixin medida2 {
+    @media screen and (max-width:1400px) {
+        @content;
+    }
+
+}
+
+@mixin medida3 {
+    @media screen and (max-width:1385px) {
+        @content;
+    }
+}
+
+@mixin medida4 {
+    @media screen and (max-width:1000px) {
+        @content;
+    }
+}
+
+@mixin medida5 {
+    @media screen and (max-width :980px) {
+        @content;
+    }
+}
+
+@mixin medida6 {
+    @media screen and (max-width:700px) {
+        @content;
+    }
+}
+
+@mixin medida7 {
+    @media screen and (max-width:600px) {
+        @content;
+    }
+
+}
+
+@mixin medida8 {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+
+
+
+
+
+
