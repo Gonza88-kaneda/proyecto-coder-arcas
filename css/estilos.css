@@ -270,6 +270,34 @@ main .discografia {
       main .discografia .discos ol li {
         text-align: start; }
 
+/* pag contacto*/
+main .contactanos {
+  color: #d50c0c;
+  background-color: black;
+  font-size: 20px;
+  padding: 25px;
+  margin-bottom: 0; }
+
+main form {
+  color: white;
+  background-color: black; }
+  main form .formulario {
+    padding: 10px 25px; }
+    main form .formulario input[type="text"],
+    main form .formulario input[type="date"],
+    main form .formulario input[type="email"] {
+      display: block;
+      border: 2px solid red;
+      padding: 2px; }
+    main form .formulario select {
+      display: block;
+      border: 2px solid red;
+      padding: 2px; }
+    main form .formulario textarea {
+      display: block;
+      border: 2px solid red;
+      padding: 2px; }
+
 footer {
   background-color: #ffde9f;
   padding-top: 10px;
