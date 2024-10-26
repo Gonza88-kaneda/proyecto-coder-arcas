@@ -114,11 +114,12 @@
             div {
                 h2{margin: 0 0 10px;
                     color:$color-terciario;
+                    font-size: 2em;
                     
                 }
                 p{ margin: 0;
                     color:$color-principal;
-                    font-size: 1em;
+                    font-size: nth($font-size,1);
                     font-weight: 500;
                 }
             }

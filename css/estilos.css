@@ -164,7 +164,8 @@ a {
         object-fit: cover; }
       .mainintegrantes .container .integrante div h2 {
         margin: 0 0 10px;
-        color: #742626; }
+        color: #742626;
+        font-size: 2em; }
       .mainintegrantes .container .integrante div p {
         margin: 0;
         color: black;

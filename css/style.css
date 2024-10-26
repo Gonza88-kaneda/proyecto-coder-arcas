@@ -221,6 +221,7 @@ main .discografia .discos ol li {
 .mainintegrantes .container .integrante div h2 {
     margin: 0 0 10px;
     color:  rgb(116, 38, 38);
+    font-size: 2em;
 }
 
 .mainintegrantes .container .integrante div p {
