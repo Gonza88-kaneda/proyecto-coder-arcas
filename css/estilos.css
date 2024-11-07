@@ -1,12 +1,14 @@
 /* variables*/
 /* listas */
 /*extend*/
-.historia h2 {
+.historia h1, .historia h2 {
   font-size: 2.2em;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   font-weight: 100;
-  margin: 0; }
+  margin: 0;
+  letter-spacing: 2px;
+  padding: 1em; }
 
 * {
   margin: 0;
@@ -55,7 +57,9 @@ a {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     padding-top: 50px;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px; }
     @media screen and (max-width: 1490px) {
       .hero .hero2 {
         display: flex;
@@ -108,9 +112,10 @@ a {
           color: white;
           padding-bottom: 10px;
           text-transform: uppercase;
-          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          transition: 1s; }
           .hero .hero2 section .backimgtour a:hover {
-            font-size: 35px; }
+            font-size: 1em; }
           @media screen and (max-width: 1490px) {
             .hero .hero2 section .backimgtour a {
               padding: 0 20px; } }
@@ -136,6 +141,15 @@ a {
 /* integrantes*/
 .mainintegrantes {
   background-color: black; }
+  .mainintegrantes h1 {
+    font-size: 2.2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin: 0;
+    letter-spacing: 2px; }
   .mainintegrantes .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -179,9 +193,10 @@ a {
   text-align: center;
   padding: 1.8em 0 1.8em 0; }
   .historia .imagenhistoria1 {
-    width: 80%;
+    width: 75%;
     height: auto;
-    padding: 1.5em 0 1.5em 0; }
+    margin: 1.5em 0;
+    border: 3px solid white; }
   .historia p {
     font-size: 1.2em;
     text-align: justify;
@@ -218,6 +233,7 @@ main .discografia {
   grid-template-columns: repeat(3, 1fr);
   background-color: black;
   padding-bottom: 2.5em;
+  padding-top: 1.5em;
   padding-left: 3em;
   overflow-x: hidden; }
   @media screen and (max-width: 1400px) {
@@ -254,7 +270,10 @@ main .discografia {
         align-items: center; } }
     main .discografia .discos img {
       width: 15em;
-      height: 15em; }
+      height: 15em;
+      transition: 1.3s; }
+      main .discografia .discos img:hover {
+        transform: scale(1.2); }
       @media screen and (max-width: 480px) {
         main .discografia .discos img {
           width: 15em;
@@ -275,7 +294,7 @@ main .discografia {
 main .contactanos {
   color: #742626;
   background-color: black;
-  font-size: 20px;
+  font-size: 2em;
   padding: 25px;
   margin-bottom: 0; }
 
@@ -289,7 +308,8 @@ main form {
     main form .formulario input[type="email"] {
       display: block;
       border: 2px solid red;
-      padding: 2px; }
+      padding: 2px;
+      width: 70%; }
     main form .formulario select {
       display: block;
       border: 2px solid red;
@@ -297,7 +317,8 @@ main form {
     main form .formulario textarea {
       display: block;
       border: 2px solid red;
-      padding: 2px; }
+      padding: 2px;
+      width: 70%; }
 
 footer {
   background-color: #ffde9f;
@@ -307,4 +328,7 @@ footer {
   footer h3 {
     font-size: 1.2em; }
   footer a img {
-    margin: 10px; }
+    margin: 10px;
+    transition: 1.3s; }
+  footer a img:hover {
+    transform: scale(1.5); }

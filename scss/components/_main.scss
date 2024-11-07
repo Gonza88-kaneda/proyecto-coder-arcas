@@ -21,8 +21,10 @@
         gap: 15px;
         padding-top: 50px;
         padding-bottom: 50px;
+        padding-left:20px ;
+        padding-right:20px ;
         @include medida1 {
-            display: flex;
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
 
@@ -67,7 +69,8 @@
                     padding-bottom: 10px;
                     text-transform: uppercase;
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                    &:hover {font-size: 35px;};
+                    transition: 1s;
+                    &:hover {font-size: 1em;};
                     @include medida1 { padding: 0 20px;}
                     
 
@@ -88,6 +91,14 @@
 
 /* integrantes*/
 .mainintegrantes {background-color:$color-principal;
+    h1 {font-size: 2.2em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: uppercase;
+        color: $color-secundario;
+        text-align: center;
+        padding: 1.5em 0;
+        margin: 0;
+        letter-spacing: 2px}
     .container{max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
@@ -132,11 +143,15 @@
     text-align: center;
     padding: 1.8em 0 1.8em 0;
 
+    h1 {@extend %tituloshistoria };
+
     h2 {@extend %tituloshistoria }
-        
-    .imagenhistoria1 {width: 80%;
+
+
+    .imagenhistoria1 {width: 75%;
         height: auto;
-        padding: 1.5em 0 1.5em 0;
+        margin: 1.5em 0;
+        border:3px solid $color-secundario
     }
 
     p{  font-size: nth($font-size,2);
@@ -174,6 +189,7 @@ main {
         grid-template-columns: repeat(3, 1fr);
         background-color:$color-principal;
         padding-bottom: 2.5em;
+        padding-top:1.5em ;
         padding-left: 3em;
         overflow-x:hidden;
         @include medida2{grid-template-columns: repeat(2, 1fr)}
@@ -203,6 +219,8 @@ main {
                 align-items: center;}
             img{ width: 15em;
                 height: 15em;
+                transition: 1.3s;
+                &:hover {transform: scale(1.2);}
                 @include medida8 {
                     width: 15em;
                     height: 15em;
@@ -228,7 +246,7 @@ main {
 main {
     .contactanos {color:$color-terciario ;
         background-color: $color-principal;
-        font-size: 20px;
+        font-size: 2em;
         padding: 25px;
         margin-bottom: 0;
         
@@ -236,7 +254,9 @@ main {
     
     form { color: white;
         background-color: black;
+        
         .formulario {padding: 10px 25px;
+            
             
             
             
@@ -245,6 +265,8 @@ main {
             input[type="email"] {display: block;
                 border: 2px solid red;
                 padding: 2px;
+                width: 70%;
+                
                 
             }
             
@@ -252,11 +274,13 @@ main {
                 border: 2px solid red;
                 padding: 2px;
                 
+                
             }
             
             textarea {display: block;
                 border: 2px solid red;
                 padding: 2px;
+                width: 70%;
                 
             }
             
